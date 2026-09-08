@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Web: Launch Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4321",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "dev: astro",
+      "sourceMaps": true
+    },
+    {
+      "name": "Web: Attach to Chrome",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "urlFilter": "http://localhost:4321/*",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true
+    },
+    {
+      "name": "Web: Launch Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "url": "http://localhost:4321",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "dev: astro",
+      "reAttach": true
+    },
+    {
+      "name": "Web: Attach to Firefox",
+      "type": "firefox",
+      "request": "attach",
+      "url": "http://localhost:4321",
+      "webRoot": "${workspaceFolder}",
+      "port": 6000
+    }
+  ]
+}

@@ -1,18 +1,16 @@
 {
   "name": "base",
-  "type": "module",
   "version": "0.0.1",
   "private": true,
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.{ts,tsx,astro}\"",
+    "lint": "oxlint .",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "typecheck": "astro check"
   },
   "dependencies": {
@@ -35,15 +33,11 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9",
-    "@eslint/js": "^10",
-    "eslint": "^10",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17",
-    "prettier": "^3.8.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "typescript": "~6",
-    "typescript-eslint": "^8"
+    "oxfmt": "^0.66.0",
+    "oxlint": "^1.81.0",
+    "typescript": "~6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

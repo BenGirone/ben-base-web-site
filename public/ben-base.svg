@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">Ben Base logo</title>
+  <rect width="64" height="64" rx="14" fill="#09090b" />
+  <rect
+    x="2"
+    y="2"
+    width="60"
+    height="60"
+    rx="12"
+    fill="none"
+    stroke="#22c55e"
+    stroke-width="4"
+  />
+  <path
+    fill="#22c55e"
+    transform="translate(0 -3.5)"
+    d="M17 13h18c9 0 14 4.7 14 12 0 4.2-2 7.5-5.5 9.5C47.7 36.4 50 40 50 45c0 8.2-5.8 13-15.5 13H17V13Zm10 9v9h7.2c3.2 0 4.8-1.5 4.8-4.5S37.4 22 34.2 22H27Zm0 18v9h7.8c3.5 0 5.2-1.5 5.2-4.5S38.3 40 34.8 40H27Z"
+  />
+</svg>

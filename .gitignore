@@ -20,3 +20,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
