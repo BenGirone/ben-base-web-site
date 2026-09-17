@@ -1,0 +1,26 @@
+---
+import type { AstroComponentFactory } from "astro/runtime/server/index.js"
+
+interface ExampleModule {
+  default: AstroComponentFactory
+}
+
+const examples = import.meta.glob<ExampleModule>("/src/module-examples/*.astro", {
+  eager: true,
+})
+const modules = ["persistence", "authentication", "agentic"] as const
+---
+
+<div class="flex flex-col gap-4">
+  {
+    modules.map((name) => {
+      const Example = examples[`/src/module-examples/${name}.astro`]?.default
+      return (
+        <section>
+          <h2 class="font-medium capitalize">{name}</h2>
+          {Example ? <Example /> : <p>Not installed</p>}
+        </section>
+      )
+    })
+  }
+</div>

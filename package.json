@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9",
+    "@types/node": "^24",
     "oxfmt": "^0.66.0",
     "oxlint": "^1.81.0",
     "typescript": "~6"
