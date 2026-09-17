@@ -15,6 +15,17 @@ shadcn/ui.
 - Provide reproducible local tooling through mise.
 - Support source-mapped browser debugging from VS Code.
 
+## Module Extension Points
+
+The template renders a stable placeholder for each optional ben-base module.
+An installed module supplies `src/module-examples/[module].astro`; when the file
+is absent, the homepage displays `Not installed` without importing optional
+module code.
+
+Optional modules may add Astro configuration and development process hooks in
+`.ben-base/modules/[module]/`. The template discovers those files by convention,
+so module recipes do not patch or overwrite template-owned source files.
+
 ## Supporting Specifications
 
 - [Developer tooling](./developer-tooling.md)

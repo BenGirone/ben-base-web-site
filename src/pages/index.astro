@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
+import ModuleExamples from "@/components/module-examples.astro"
 ---
 
 <Layout>
@@ -12,6 +13,7 @@ import { Button } from "@/components/ui/button"
         <p>We've already added the button component for you.</p>
         <Button client:load className="mt-2">Button</Button>
       </div>
+      <ModuleExamples />
     </div>
   </div>
 </Layout>
